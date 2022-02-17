@@ -1,5 +1,12 @@
 # Changelog
 
+## \[1.0.0-rc.3]
+
+- Callbacks passed to `tauri::plugin::Builder::setup` or `tauri::plugin::Builder::setup_with_config` are no longer required to implement `Sync`.
+  - [fb7ee2c9](https://www.github.com/tauri-apps/tauri/commit/fb7ee2c987d9fca23f08bd470789069d9477c66e) drop Sync req from `setup` and `setup_with_config` ([#3471](https://www.github.com/tauri-apps/tauri/pull/3471)) on 2022-02-16
+- Added context to the file system endpoint errors.
+  - [06053833](https://www.github.com/tauri-apps/tauri/commit/060538331c138473159cf8fee0fcb7904ca33d3b) feat(core): add context to the filesystem APIs errors, closes [#3457](https://www.github.com/tauri-apps/tauri/pull/3457) ([#3480](https://www.github.com/tauri-apps/tauri/pull/3480)) on 2022-02-16
+
 ## \[1.0.0-rc.2]
 
 - Ease the requirements for plugin hooks. `setup` and `setup_with_config` can now be `FnOnce` and `on_webview_ready`, `on_event` and `on_page_load` can be `FnMut`.

@@ -1,5 +1,10 @@
 # Changelog
 
+## \[1.0.0-rc.6]
+
+- Check the current folder before checking the directories on the app and tauri dir path lookup function.
+  - [a06de376](https://www.github.com/tauri-apps/tauri/commit/a06de3760184caa71acfe7a2fe2189a033b565f5) fix(cli): path lookup should not check subfolder before the current one ([#3465](https://www.github.com/tauri-apps/tauri/pull/3465)) on 2022-02-15
+
 ## \[1.0.0-rc.5]
 
 - Allow passing arguments to the `build` runner (`tauri build -- <ARGS>...`).
